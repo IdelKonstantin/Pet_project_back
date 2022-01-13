@@ -1,0 +1,10 @@
+*.a
+*.so
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+Makefile
+install_manifest.txt
+test_libs
+*.sqlite
+build/

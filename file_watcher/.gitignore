@@ -1,0 +1,11 @@
+*.a
+#CMake files
+cmake-build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+/build-*
+test_lib
+build/
+Makefile

@@ -1,0 +1,20 @@
+[Unit]
+Description=http daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/pet/sbin/http_daemon /opt/pet/sbin/ini_example.ini.pg
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStop=/bin/kill $MAINPID
+
+Restart=always
+RestartSec=5
+
+User=root
+Group=root
+
+OOMScoreAdjust=1000
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+*.a
+*.so
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+Makefile
+http_daemon
+*.sqlite
+LOGS/
+SONGS/
+build/
